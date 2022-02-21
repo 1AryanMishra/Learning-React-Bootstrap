@@ -1,0 +1,62 @@
+@media (min-width : 950px){
+    body{
+
+        main{
+            background: white;
+
+            .DataContainer{
+                margin-top: 1rem;
+                padding: 1rem;
+                max-width: 95%;
+
+                .row{
+                    border-top: 1px;
+                    border-color: black;
+                    padding: 0.5rem;
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                }
+
+                .DataLabelRow{
+                    padding: 2rem 1rem;
+                }
+
+                .DataRows{
+                    padding: 1rem;
+                    align-items: center;
+                    border: 1px solid rgb(229, 232, 235);
+                    border-right: none;
+                    border-left: none;
+
+                    &:hover{
+                        cursor: pointer;
+                        transition: 0.2s ease;
+                        box-shadow: rgba(4, 17, 29, 0.25) 0px 0px 8px 0px;
+                    }
+
+                    .icon{
+                        max-width: 8%;
+                        align-self: center;
+                        margin: 3px;
+                    }
+
+                    .percentage{
+                        font-weight: bold;
+                        color: #eb5757;
+                    }
+
+                    .LabelCol{
+                        display: flex;
+                        align-items: center;
+
+                        img{
+                            margin: 0 6px;
+                            border-radius: 100%;
+                            max-width: 15%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
