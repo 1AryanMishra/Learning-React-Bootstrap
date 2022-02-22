@@ -1,0 +1,145 @@
+.DataContainer{
+    margin-top: 1rem;
+    padding: 1rem;
+    max-width: 95%;
+
+    .row{
+        border-top: 1px;
+        border-color: black;
+    }
+
+    .DataLabelRow{
+        padding: 2rem 1rem;
+
+        span{
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+    }
+
+    .DataRows{
+        align-items: center;
+        border: 1px solid rgb(229, 232, 235);
+        border-right: none;
+        padding: 0 1rem;
+        border-left: none;
+
+        &:hover{
+            cursor: pointer;
+            transition: 0.2s ease;
+            box-shadow: rgba(4, 17, 29, 0.25) 0px 0px 8px 0px;
+        }
+
+        .icon{
+            width: 8px;
+            align-self: center;
+            margin: 3px;
+        }
+
+        .percentageData{
+            color: #eb5757;
+        }
+
+        .LabelColumn{
+            padding: 1.5rem 0;
+            align-items: center;
+
+            img{
+                margin: 0 8px;
+                border-radius: 100%;
+                width: 50px;
+            }
+
+            .NameBtnArea{
+                display: flex;
+                align-items: center;
+
+                .MoreBtnArea{
+                    display: grid;
+                    grid-template-rows: 2fr;
+
+                    button{
+                        display: none;
+                        margin-right: auto;
+                        background: none;
+                        border: none;
+                        outline: none;
+                        font-size: 0.75rem;
+                        color : #707a83;
+                    }
+                }
+            }
+        }
+
+        .VolumeDayContainer{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .IconContainer{
+                display: flex;
+                flex-flow: row nowrap;
+            }
+        }
+
+        .ShowLowerColumn{
+
+            .LowerColumnDataArea{
+
+                .LowerColumnDataLabel{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width : 1200px) {
+    .DataContainer{
+
+        .DataRows{
+    
+            .LabelColumn{
+                padding: 2rem;
+    
+                .NameBtnArea{
+    
+                    .MoreBtnArea{
+    
+                        button{
+                            display: block;
+                        }
+                    }
+                }
+            }
+    
+            .VolumeDayContainer{
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+    
+            .HideLowerColumn{
+                display: none;
+            }
+        
+            .ShowLowerColumn{
+                border-top: 1px solid rgb(229, 232, 235);
+                display: block;
+                text-align: center;
+                padding: 0.8rem;
+                
+                .LowerColumnDataArea{
+                    display: flex;
+                    flex-flow: column nowrap;
+    
+                    .LowerColumnDataLabel{
+                        display: block;
+                        color: #707a83;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+}
+    

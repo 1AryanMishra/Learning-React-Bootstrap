@@ -1,61 +1,65 @@
+* {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+body main {
+  margin-top: 1rem;
+}
+
+body main .TopHeroContainer {
+  padding: 1rem;
+  text-align: center;
+  max-width: 90%;
+  margin: auto;
+}
+
+body main .TopHeroContainer h1 {
+  font-weight: bold;
+}
+
+body main .TopHeroContainer h5 {
+  color: #707a83;
+  font-size: 1.1rem;
+  margin: 1rem;
+}
+
+body main .TopHeroContainer .DropDownArea {
+  margin: 1rem;
+}
+
+body main .TopHeroContainer .DropDownArea .DropDownToggle {
+  width: 70%;
+  height: 60px;
+  border-radius: 12px;
+  background: none;
+  color: #000;
+  font-weight: bold;
+  text-align: left;
+  border: 0.5px solid #e5e8eb;
+}
+
+body main .TopHeroContainer .DropDownArea .DrpDwnMenu {
+  width: 70%;
+}
+
+body main .TopHeroContainer .DropDownArea .DropDwnItem {
+  font-weight: bold;
+  padding: 1rem;
+  border: 1px solid #e5e8eb;
+}
+
+@media (max-width: 1200px) {
+  body main .DataLabelRow {
+    overflow: hidden;
+    display: none;
+  }
+}
+
 @media (min-width: 950px) {
-  body main {
-    background: white;
-  }
-  body main .DataContainer {
-    margin-top: 1rem;
+  .TopHeroContainer {
+    max-width: 60%;
     padding: 1rem;
-    max-width: 95%;
-  }
-  body main .DataContainer .row {
-    border-top: 1px;
-    border-color: black;
-    padding: 0.5rem;
-    font-weight: 600;
-    font-size: 1.1rem;
-  }
-  body main .DataContainer .DataLabelRow {
-    padding: 2rem 1rem;
-  }
-  body main .DataContainer .DataRows {
-    padding: 1rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border: 1px solid #e5e8eb;
-    border-right: none;
-    border-left: none;
-  }
-  body main .DataContainer .DataRows:hover {
-    cursor: pointer;
-    -webkit-transition: 0.2s ease;
-    transition: 0.2s ease;
-    -webkit-box-shadow: rgba(4, 17, 29, 0.25) 0px 0px 8px 0px;
-            box-shadow: rgba(4, 17, 29, 0.25) 0px 0px 8px 0px;
-  }
-  body main .DataContainer .DataRows .icon {
-    max-width: 8%;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    margin: 3px;
-  }
-  body main .DataContainer .DataRows .percentage {
-    font-weight: bold;
-    color: #eb5757;
-  }
-  body main .DataContainer .DataRows .LabelCol {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  body main .DataContainer .DataRows .LabelCol img {
-    margin: 0 6px;
-    border-radius: 100%;
-    max-width: 15%;
   }
 }
 /*# sourceMappingURL=App.css.map */

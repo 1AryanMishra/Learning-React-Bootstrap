@@ -1,0 +1,148 @@
+.DataContainer {
+  margin-top: 1rem;
+  padding: 1rem;
+  max-width: 95%;
+}
+
+.DataContainer .row {
+  border-top: 1px;
+  border-color: black;
+}
+
+.DataContainer .DataLabelRow {
+  padding: 2rem 1rem;
+}
+
+.DataContainer .DataLabelRow span {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.DataContainer .DataRows {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #e5e8eb;
+  border-right: none;
+  padding: 0 1rem;
+  border-left: none;
+}
+
+.DataContainer .DataRows:hover {
+  cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  -webkit-box-shadow: rgba(4, 17, 29, 0.25) 0px 0px 8px 0px;
+          box-shadow: rgba(4, 17, 29, 0.25) 0px 0px 8px 0px;
+}
+
+.DataContainer .DataRows .icon {
+  width: 8px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 3px;
+}
+
+.DataContainer .DataRows .percentageData {
+  color: #eb5757;
+}
+
+.DataContainer .DataRows .LabelColumn {
+  padding: 1.5rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.DataContainer .DataRows .LabelColumn img {
+  margin: 0 8px;
+  border-radius: 100%;
+  width: 50px;
+}
+
+.DataContainer .DataRows .LabelColumn .NameBtnArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.DataContainer .DataRows .LabelColumn .NameBtnArea .MoreBtnArea {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr;
+      grid-template-rows: 2fr;
+}
+
+.DataContainer .DataRows .LabelColumn .NameBtnArea .MoreBtnArea button {
+  display: none;
+  margin-right: auto;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 0.75rem;
+  color: #707a83;
+}
+
+.DataContainer .DataRows .VolumeDayContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.DataContainer .DataRows .VolumeDayContainer .IconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.DataContainer .DataRows .ShowLowerColumn .LowerColumnDataArea .LowerColumnDataLabel {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .DataContainer .DataRows .LabelColumn {
+    padding: 2rem;
+  }
+  .DataContainer .DataRows .LabelColumn .NameBtnArea .MoreBtnArea button {
+    display: block;
+  }
+  .DataContainer .DataRows .VolumeDayContainer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  .DataContainer .DataRows .HideLowerColumn {
+    display: none;
+  }
+  .DataContainer .DataRows .ShowLowerColumn {
+    border-top: 1px solid #e5e8eb;
+    display: block;
+    text-align: center;
+    padding: 0.8rem;
+  }
+  .DataContainer .DataRows .ShowLowerColumn .LowerColumnDataArea {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .DataContainer .DataRows .ShowLowerColumn .LowerColumnDataArea .LowerColumnDataLabel {
+    display: block;
+    color: #707a83;
+    font-weight: normal;
+  }
+}
+/*# sourceMappingURL=DataContainer.css.map */
